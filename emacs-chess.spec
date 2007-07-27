@@ -3,8 +3,8 @@
 
 Name:		%name
 Summary: 	A client and library for playing Chess from Emacs.
-Version: 	2.0b5
-Release: 	%mkrel 4
+Version: 	2.0b6
+Release: 	%mkrel 1
 License:	GPL
 Group: 		Editors
 Source: 	%{pname}-%{version}.tar.bz2
@@ -25,7 +25,7 @@ sufficiently challenging, I'm sure.  Once they are installed, chess.el
 will use them, provided the locations of the binaries is on your PATH.
 
 %prep 
-%setup -q -n %pname-%version
+%setup -q -n %pname
 
 %build
 make clean
@@ -48,4 +48,3 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/emacs/site-lisp/*.el
 %_datadir/emacs/site-lisp/*.elc
 %config(noreplace) %_sysconfdir/emacs/site-start.d/%pname-emacs.el
-
