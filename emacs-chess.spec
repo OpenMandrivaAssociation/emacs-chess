@@ -12,6 +12,7 @@ Url: 		http://www.newartisans.com/johnw/EmacsChess.html
 BuildRequires: 	emacs-bin
 BuildRequires:  texinfo
 BuildArch: noarch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-root
 
 %{expand:%%define emacs_version %(rpm -q emacs|sed 's/emacs-\([0-9].*\)-.*$/\1/')}
 
