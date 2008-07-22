@@ -4,7 +4,7 @@
 Name:		%name
 Summary: 	A client and library for playing Chess from Emacs
 Version: 	2.0b6
-Release: 	%mkrel 2
+Release: 	%mkrel 3
 License:	GPL
 Group: 		Editors
 Source: 	%{pname}-%{version}.tar.bz2
