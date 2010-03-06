@@ -1,17 +1,17 @@
-%define pname chess
-%define name emacs-%pname
+%define pname	chess
+%define name	emacs-%pname
 
 Name:		%name
 Summary: 	A client and library for playing Chess from Emacs
 Version: 	2.0b6
-Release: 	%mkrel 4
-License:	GPL
+Release: 	%mkrel 5
+License:	GPLv2
 Group: 		Editors
 Source: 	%{pname}-%{version}.tar.bz2
-Url: 		http://www.newartisans.com/johnw/EmacsChess.html
+Url: 		https://sourceforge.net/projects/%{name}/files
 BuildRequires: 	emacs-bin
 BuildRequires:  texinfo
-BuildArch: noarch
+BuildArch: 	noarch
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-root
 
 %{expand:%%define emacs_version %(rpm -q emacs|sed 's/emacs-\([0-9].*\)-.*$/\1/')}
@@ -35,7 +35,6 @@ make clean
 rm -fr $RPM_BUILD_ROOT/*
 mkdir -p $RPM_BUILD_ROOT/%_datadir/emacs/site-lisp
 install	*.el *.elc $RPM_BUILD_ROOT/%_datadir/emacs/site-lisp
-
 install -d %buildroot%{_sysconfdir}/emacs/site-start.d
 cp chess-auto.el %buildroot%{_sysconfdir}/emacs/site-start.d/%pname-emacs.el
 
