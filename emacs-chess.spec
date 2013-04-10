@@ -2,7 +2,7 @@
 %define name emacs-%pname
 
 Name:		%name
-Summary: 	A client and library for playing Chess from Emacs.
+Summary: 	A client and library for playing Chess from Emacs
 Version: 	2.0b5
 Release: 	%mkrel 4
 License:	GPL
