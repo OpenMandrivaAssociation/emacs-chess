@@ -3,7 +3,7 @@
 Name:		emacs-%{pname}
 Summary: 	A client and library for playing Chess from Emacs
 Version: 	2.0b5
-Release: 	7
+Release: 	8
 License:	GPL
 Group: 		Editors
 Source: 	%{pname}-%{version}.tar.bz2
