@@ -8,7 +8,7 @@ License:	GPL
 Group: 		Editors
 Source: 	%{pname}-%{version}.tar.bz2
 Patch0:         chess-2.0b5-texi.patch
-Url: 		http://www.newartisans.com/johnw/EmacsChess.html
+Url: 		https://www.newartisans.com/johnw/EmacsChess.html
 BuildRequires: 	emacs-bin
 BuildRequires:  texinfo
 BuildArch: noarch
