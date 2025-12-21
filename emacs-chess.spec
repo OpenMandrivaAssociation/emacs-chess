@@ -9,6 +9,7 @@ Group: 		Editors
 Source: 	%{pname}-%{version}.tar.bz2
 Patch0:         chess-2.0b5-texi.patch
 Url: 		https://www.newartisans.com/johnw/EmacsChess.html
+BuildRequires:	make
 BuildRequires: 	emacs-bin
 BuildRequires:  texinfo
 BuildArch: noarch
