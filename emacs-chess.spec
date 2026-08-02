@@ -2,12 +2,12 @@
 
 Name:		emacs-%{pname}
 Summary: 	A client and library for playing Chess from Emacs
-Version: 	2.0b5
-Release: 	8
+Version: 	2.0.5
+Release: 	1
 License:	GPL
 Group: 		Editors
 Source: 	%{pname}-%{version}.tar.bz2
-Patch0:         chess-2.0b5-texi.patch
+Patch0:         chess-2.0.5-texi.patch
 Url: 		https://www.newartisans.com/johnw/EmacsChess.html
 BuildRequires:	make
 BuildRequires: 	emacs-bin
@@ -26,7 +26,7 @@ will use them, provided the locations of the binaries is on your PATH.
 
 %prep
 %setup -q -n %{pname}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 make clean

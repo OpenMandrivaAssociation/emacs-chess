@@ -1,0 +1,9 @@
+--- chess-2.0.5/chess.texi
++++ chess-2.0.5/chess.texi
+@@ -40,3 +40,3 @@
+-@sp 1
++@sp 1
+-@center @titlefont{to}
++@center @titlefont{to}
+-@sp 1
++@sp 1
